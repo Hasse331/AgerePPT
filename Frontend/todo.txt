@@ -1,0 +1,4 @@
+
+ - Setup Redux
+ - Configure React Query
+ - Set Up Material UI

@@ -1,0 +1,28 @@
+
+
+Tech Stack and learning objectives:
+
+Front:
+TypeScript
+Vite
+
+Learning objectives in order:
+React useContext API and useReducer
+Material UI
+Axios
+Redux
+React Query
+
+Back:
+Node.js
+Express.js
+MongoDB
+
+Testing:
+Jest
+React testing library
+Cypress for e2e testing
+
+Tools:
+
+Simple Project Manager (SPM)
