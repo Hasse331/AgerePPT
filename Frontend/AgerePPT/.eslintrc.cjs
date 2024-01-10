@@ -24,6 +24,9 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "react"],
-  rules: { "react/react-in-jsx-scope": "off" },
+  plugins: ["@typescript-eslint", "react", "@emotion"],
+  rules: {
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["error", { ignore: ["css"] }],
+  },
 };

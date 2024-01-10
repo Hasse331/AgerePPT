@@ -5,6 +5,7 @@ Tech Stack and learning objectives:
 Front:
 TypeScript
 Vite
+React Router
 
 Learning objectives in order:
 React useContext API and useReducer
