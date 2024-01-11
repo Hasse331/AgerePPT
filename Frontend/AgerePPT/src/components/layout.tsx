@@ -17,6 +17,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
 import SettingsIcon from "@mui/icons-material/Settings";
+import { Link } from "react-router-dom";
 
 const drawerWidth: number = 240;
 
@@ -100,6 +101,7 @@ export default function Layout({ children }) {
               >
                 <MenuIcon />
               </IconButton>
+
               <Typography
                 component="h1"
                 variant="h6"
@@ -107,7 +109,20 @@ export default function Layout({ children }) {
                 noWrap
                 sx={{ flexGrow: 1 }}
               >
-                AgerePPT
+                <Link
+                  to="/"
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  AgerePPT{" "}
+                  <span style={{ fontSize: "10px" }}>
+                    Personal Productivity Tools
+                  </span>
+                </Link>
               </Typography>
               <IconButton color="inherit">
                 <Badge badgeContent={4} color="secondary">
@@ -117,7 +132,7 @@ export default function Layout({ children }) {
               <IconButton color="inherit">
                 <SettingsIcon />
               </IconButton>
-              <IconButton color="inherit">
+              <IconButton component={Link} to={"/sign-in"} color="inherit">
                 <LoginIcon />
               </IconButton>
             </Toolbar>
